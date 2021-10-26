@@ -1,0 +1,6 @@
+framework module LandrayOfficeSDK {
+  umbrella header "LandrayOfficeSDK.h"
+
+  export *
+  module * { export * }
+}
