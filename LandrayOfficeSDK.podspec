@@ -21,8 +21,7 @@ Pod::Spec.new do |spec|
   spec.frameworks   = 'Foundation'
 
   spec.source       = { :git => "https://github.com/halimaao/LandrayOfficeSDK.git", :tag => spec.version }
-  spec.ios.deployment_target    = '10.0'
-  spec.vendored_framework   = 'Framework.framework'
+  spec.ios.deployment_target    = '9.0'
   spec.requires_arc = true
   spec.platform     = :ios
 
