@@ -18,14 +18,15 @@ Pod::Spec.new do |spec|
   spec.author       = { "Laughing" => "xiangwu1030@126.com" }
 
   spec.description  = "TODO: Add long description of the pod here."
-  spec.frameworks   = 'Foundation'
-  spec.vendored_frameworks = 'LandrayOfficeSDK.framework'
   spec.source       = { :git => "https://github.com/halimaao/LandrayOfficeSDK.git", :tag => spec.version }
-  #spec.source_files = 'LandrayOfficeSDK.framework/**/*'
   spec.resources    = 'KingsoftOfficeSDK.bundle'
   spec.ios.deployment_target    = '9.0'
   spec.requires_arc = true
   spec.platform     = :ios
-  spec.dependency   = 'AFNetworking'
+  
+  spec.ios.vendored_framework   = '**/*.framework'
+  spec.ios.vendored_libraries   = '**/*.a'
+  spec.source_files = '**/*.{h,m}'
+  spec.static_framework = true
   
 end
