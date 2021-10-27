@@ -26,5 +26,6 @@ Pod::Spec.new do |spec|
   spec.ios.deployment_target    = '9.0'
   spec.requires_arc = true
   spec.platform     = :ios
-
+  spec.dependency   = 'AFNetworking'
+  
 end
