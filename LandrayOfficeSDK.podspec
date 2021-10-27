@@ -22,7 +22,7 @@ Pod::Spec.new do |spec|
   spec.vendored_frameworks = 'LandrayOfficeSDK.framework'
   spec.source       = { :git => "https://github.com/halimaao/LandrayOfficeSDK.git", :tag => spec.version }
   #spec.source_files = 'LandrayOfficeSDK.framework/**/*'
-  spec.resources    = 'LandrayOfficeSDK/KingsoftOfficeSDK.bundle'
+  spec.resources    = 'KingsoftOfficeSDK.bundle'
   spec.ios.deployment_target    = '9.0'
   spec.requires_arc = true
   spec.platform     = :ios
