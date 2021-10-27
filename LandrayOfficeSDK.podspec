@@ -15,14 +15,15 @@ Pod::Spec.new do |spec|
 
   spec.homepage     = "https://github.com/halimaao/LandrayOfficeSDK"
   spec.license      = "MIT"
-  spec.author             = { "Laughing" => "xiangwu1030@126.com" }
+  spec.author       = { "Laughing" => "xiangwu1030@126.com" }
 
-  spec.description = "TODO: Add long description of the pod here."
-  spec.frameworks = ["Foundation", "AVFoundation", "UIKit", "SystemConfiguration"]
+  spec.description  = "TODO: Add long description of the pod here."
+  spec.frameworks   = 'Foundation'
 
-  spec.source  = { :git => "https://github.com/halimaao/LandrayOfficeSDK.git", :tag => spec.version }
+  spec.source       = { :git => "https://github.com/halimaao/LandrayOfficeSDK.git", :tag => spec.version }
   spec.ios.deployment_target    = '10.0'
-  spec.ios.vendored_framework   = '*.framework'
-  spec.static_framework = true
+  spec.vendored_framework   = 'Framework.framework'
+  spec.requires_arc = true
+  spec.platform     = :ios
 
 end
