@@ -24,6 +24,7 @@ Pod::Spec.new do |spec|
   spec.requires_arc = true
   spec.platform     = :ios
   
+  spec.frameworks = ["AFNetworking"]
   spec.ios.vendored_framework   = '**/*.framework'
   spec.ios.vendored_libraries   = '**/*.a'
   spec.source_files = '**/*.{h,m}'
