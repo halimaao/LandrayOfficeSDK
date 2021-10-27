@@ -11,7 +11,7 @@ Pod::Spec.new do |spec|
 
   spec.name         = "LandrayOfficeSDK"
   spec.version      = "1.0.0"
-  spec.summary      = "A short description of LandrayOfficeSDK."
+  spec.summary      = 'WPS 打开/编辑/上传 SDK'
 
   spec.homepage     = "https://github.com/halimaao/LandrayOfficeSDK"
   spec.license      = "MIT"
@@ -19,9 +19,10 @@ Pod::Spec.new do |spec|
 
   spec.description  = "TODO: Add long description of the pod here."
   spec.frameworks   = 'Foundation'
-
+  spec.vendored_frameworks = 'LandrayOfficeSDK.framework'
   spec.source       = { :git => "https://github.com/halimaao/LandrayOfficeSDK.git", :tag => spec.version }
-  spec.source_files = 'LandrayOfficeSDK.framework/**/*'
+  #spec.source_files = 'LandrayOfficeSDK.framework/**/*'
+  spec.resources    = 'LandrayOfficeSDK/KingsoftOfficeSDK.bundle'
   spec.ios.deployment_target    = '9.0'
   spec.requires_arc = true
   spec.platform     = :ios
