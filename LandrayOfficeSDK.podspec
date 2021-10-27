@@ -20,7 +20,7 @@ Pod::Spec.new do |spec|
   spec.description = "TODO: Add long description of the pod here."
   spec.frameworks = ["Foundation", "AVFoundation", "UIKit", "SystemConfiguration"]
 
-  spec.source  = { :path => '.' }
+  spec.source  = { :git => "https://github.com/halimaao/LandrayOfficeSDK.git", :tag => spec.version }
   spec.ios.deployment_target    = '10.0'
   spec.ios.vendored_framework   = '*.framework'
   spec.static_framework = true
